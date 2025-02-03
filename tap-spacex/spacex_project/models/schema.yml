@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: public
+    database: DE_DB   # Ajoute le nom de la base de données ici
+    schema: public
+    tables:
+      - name: launches
+      - name: rockets
+        description: "Table contenant les informations sur les fusées"
+
+models:
+  - name: launches
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+  - name: rockets
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
