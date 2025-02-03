@@ -6,7 +6,6 @@ import numpy as np
 import requests
 
 
-
 sys.stdout.reconfigure(encoding='utf-8')
 
 LOGGER = singer.get_logger()
